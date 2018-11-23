@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 
 /**
- * @Description:
+ * @Description: 单个注册以及包扫描
  * @Author: YinJunjie
  * @CreateDate: 2018/11/20 14:06
  * @Version: 1.0

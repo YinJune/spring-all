@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 
 /**
- * @Description:
+ * @Description: 懒加载
  * @Author: YinJunjie
  * @CreateDate: 2018/11/20 16:53
  * @Version: 1.0
