@@ -9,7 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-study-aop-01</artifactId>
-
+    <artifactId>spring-study</artifactId>
+    <modules>
+        <module>spring-study-bean-01</module>
+        <module>spring-study-bean-02</module>
+        <module>spring-study-property-01</module>
+        <module>spring-study-autowired-01</module>
+        <module>spring-study-aop-01</module>
+    </modules>
 
 </project>

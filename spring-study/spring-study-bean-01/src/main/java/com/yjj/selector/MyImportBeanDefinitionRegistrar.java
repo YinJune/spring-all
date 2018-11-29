@@ -15,7 +15,7 @@ import org.springframework.core.type.AnnotationMetadata;
 public class MyImportBeanDefinitionRegistrar implements ImportBeanDefinitionRegistrar {
 
     /**
-     * 把所有需要添加到容器的bean通过beanDefinitionRegistry的
+     * 把所有需要添加到容器的bean通过beanDefinitionRegistry的registerBeanDefinition
      * @param annotationMetadata 当前类注解信息
      * @param beanDefinitionRegistry DefinitionRegistry注册类
      */
