@@ -10,12 +10,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-study</artifactId>
+    <packaging>pom</packaging>
     <modules>
         <module>spring-study-bean-01</module>
         <module>spring-study-bean-02</module>
         <module>spring-study-property-01</module>
         <module>spring-study-autowired-01</module>
         <module>spring-study-aop-01</module>
+        <module>spring-study-servlet-01</module>
     </modules>
 
 </project>

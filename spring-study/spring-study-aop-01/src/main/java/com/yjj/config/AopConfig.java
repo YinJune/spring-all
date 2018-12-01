@@ -52,6 +52,24 @@ public class AopConfig {
      *                  ->实现了后置处理器，又实现了BeanFactoryAware
      *
      *
+     * 1).test01
+     * 2).refresh 刷新容器
+     * 3).registerBeanPostProcessors(beanFactory) 注册bean后置处理器用来拦截bean的创建
+     *      1).先获取IOC容器中已经定义了的需要创建对象的所有BeanPostProcessor
+     *      2).给容器中加别的BeanPostProcessor
+     *      3).根据优先级注册BeanPostProcessor，PriorityOrdered > Ordered > rest(没实现优先级接口的普通Processor)
+     *
+     * 4).注册BeanPostProcessor，实际上就是创建BeanPostProcessor并保存在容器中，创建internalAutoProxyCreator的BeanPostProcessor
+     *    实际上就是AnnotationAwareAspectJAutoProxyCreator
+     *    1).创建bean的实例
+     *    2).populateBean：给bean的各个属性赋值
+     *    3).initializeBean：初始化bean
+     *          1).invokeAwareMethods():处理Aware接口的方法回调
+     *          2).applyBeanPostProcessorsBeforeInitialization：应用后置处理器的postProcessBeforeInitialization
+     *          3).invokeInitMethods()：执行初始化方法
+     *          4).applyBeanPostProcessorsAfterInitialization：执行后置处理器的postProcessAfterInitialization
+     *    4).BeanPostProcessor创建成功
+     *
      */
 
     @Bean
